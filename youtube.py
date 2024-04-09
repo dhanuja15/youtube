@@ -10,7 +10,7 @@ import streamlit as st
 
 #API Key connection
 def connect_api():
-    api_id="AIzaSyD9moyK4kbvtjLzFbIg8zqJqvX8tP1D33s"
+    api_id="ENTER YOUR API KEY"
     api_service_name="youtube"
     api_version="v3"
     youtube=build(api_service_name,api_version,developerKey=api_id)
@@ -150,9 +150,9 @@ def get_comment_info(channel_id):
 def channel_tb(channel_id):
     
     mydb = db.connect(
-        host='localhost',
-        user='root',
-        password='root',
+        host='enter your hostname',
+        user=' enter your user name',
+        password='enter your password',
         database='youtube')
     cursor = mydb.cursor()
     
@@ -172,9 +172,9 @@ def channel_tb(channel_id):
 def playlist_tb(channel_id):
 
     mydb = db.connect(
-        host='localhost',
-        user='root',
-        password='root',
+        host='enter your hostname',
+        user=' enter your user name',
+        password='enter your password',
         database='youtube')
     cursor = mydb.cursor()
     try:
@@ -193,9 +193,9 @@ def playlist_tb(channel_id):
 #video table
 def video_tb(channel_id):
     mydb = db.connect(
-        host='localhost',
-        user='root',
-        password='root',
+        host='enter your hostname',
+        user=' enter your user name',
+        password='enter your password',
         database='youtube')
     cursor = mydb.cursor()
     
@@ -228,9 +228,9 @@ def video_tb(channel_id):
 #comment table
 def comment_tb(channel_id):
     mydb = db.connect(
-        host='localhost',
-        user='root',
-        password='root',
+        host='enter your hostname',
+        user=' enter your user name',
+        password='enter your password',
         database='youtube')
     cursor = mydb.cursor()
     try:
@@ -306,9 +306,9 @@ if st.button("Store data to MySQL DB"):
 
 #MySQL connection
 mydb = db.connect(
-        host='localhost',
-        user='root',
-        password='root',
+        host='enter your hostname',
+        user=' enter your user name',
+        password='enter your password',
         database='youtube')
 cursor = mydb.cursor()
 
