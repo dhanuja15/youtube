@@ -10,7 +10,7 @@ import streamlit as st
 
 #API Key connection
 def connect_api():
-    api_id="AIzaSyD9moyK4kbvtjLzFbIg8zqJqvX8tP1D33s"
+    api_id="enter your api key"
     api_service_name="youtube"
     api_version="v3"
     youtube=build(api_service_name,api_version,developerKey=api_id)
@@ -156,8 +156,8 @@ def channel_tb(channel_id):
     
     mydb = db.connect(
         host='localhost',
-        user='root',
-        password='root',
+        user='enter your username',
+        password='enter your password',
         database='youtube')
     cursor = mydb.cursor()
     
@@ -178,8 +178,8 @@ def playlist_tb(channel_id):
 
     mydb = db.connect(
         host='localhost',
-        user='root',
-        password='root',
+        user='enter your username',
+        password='enter your password',
         database='youtube')
     cursor = mydb.cursor()
     try:
@@ -199,8 +199,8 @@ def playlist_tb(channel_id):
 def video_tb(channel_id):
     mydb = db.connect(
         host='localhost',
-        user='root',
-        password='root',
+        user='enter your username',
+        password='enter your password'
         database='youtube')
     cursor = mydb.cursor()
     
@@ -234,8 +234,8 @@ def video_tb(channel_id):
 def comment_tb(channel_id):
     mydb = db.connect(
         host='localhost',
-        user='root',
-        password='root',
+        user='enter your username',
+        password='enter your password'
         database='youtube')
     cursor = mydb.cursor()
     try:
@@ -312,8 +312,8 @@ if st.button("Store data to MySQL DB"):
 #MySQL connection
 mydb = db.connect(
         host='localhost',
-        user='root',
-        password='root',
+        user='enter your username',
+        password='enter your password'
         database='youtube')
 cursor = mydb.cursor()
 
